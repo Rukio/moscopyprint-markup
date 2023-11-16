@@ -1,0 +1,28 @@
+.go-up {
+	z-index: 5;
+  position: fixed; 
+  bottom: 25px; 
+  right: 10px; 
+  cursor:pointer; 
+  display:none;
+  width: 51px;
+	height: 51px;
+	border-radius: 5px;
+	background: #f15a24 url(../img/go-up.svg) no-repeat center center;
+	background-size: 19px 11px;
+	box-shadow: 0 0 6px rgba(241, 90, 36, 0.32);
+	opacity: 0.5;
+}
+ 
+.go-up:hover {
+	
+	opacity: 1;
+}
+
+@media(max-width: 540px) {
+	.go-up {
+		width: 40px;
+		height: 40px;
+		background-size: 17px 9px;
+	}
+}

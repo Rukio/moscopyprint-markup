@@ -1,0 +1,88 @@
+.reviews-main
+	position: relative
+	margin-top: 70px
+
+.reviews-main__content
+	q 
+		quotes: "”" "˝"
+		&:before
+			content: open-quote
+		&:after
+			content: close-quote
+	.button-container
+		.add-review-btn
+			margin-top: 40px
+		&:after
+			margin-top: 134px
+			left: 0
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: #e6e6e6
+	.benefit-header
+		p 
+			width: 760px
+	.pagination
+		margin-bottom: 85px
+		position: relative
+		&:after
+			margin-top: 80px
+			left: 0
+			content: ''
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: #e6e6e6
+	.socials
+		padding-top: 0px	
+	.form-section
+		margin-top: 80px
+		margin-bottom: 80px
+		border-top: none
+		&:before
+			top: 0px
+			left: -50%
+			content: ''
+			width: 200%
+			height: 1px
+			background-color: #e5e5e5
+			position: absolute
+	.button-container
+		margin-top: 30px
+		&:after
+			height: 0px
+		
+.reviews-block
+	margin: 0 auto
+	.wrapp-card
+		margin-bottom: 50px
+		margin-top: 145px
+		&:before
+			top: -70px
+			left: -50%
+			content: ''
+			width: 200%
+			height: 1px
+			background-color: #e5e5e5
+			position: absolute
+		
+.reviews-main__card
+	border: 1px solid rgba(51, 51, 51, 0.1)
+	border-radius: 6px
+	width: 31.5%
+	padding: 20px 35px 30px 35px
+	position: relative
+	margin-bottom: 24px
+	margin-left: 10px
+	.reviews-text
+		p 
+			font-size: 16px
+			letter-spacing: 0.40px
+			line-height: 27px
+	.reviews-footer
+		display: flex
+		align-items: center
+		margin-top: 20px
+.grid-sizer
+	width: 33.3%

@@ -1,0 +1,97 @@
+.reviews-container
+	position: relative
+	.footer-arrows-slider
+		padding: 0 0
+	.arrows-slider
+		width: 114%
+		justify-content: space-between
+		transform: translate(-6%, -50%)
+		.arrows-slider-left, .arrows-slider-right
+			opacity: 1
+			border: 1px solid $hover-color
+			fill: $hover-color
+.reviews-cards
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.img-footer
+	width: 60px
+	height: 60px
+	border-radius: 200px 200px 200px 200px
+	overflow: hidden
+	margin-right: 20px
+	border: 1px solid #e5e5e5
+	img 
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.reviews-content
+	outline: none
+	margin: 0 12px
+	// margin-right: 25px
+	// margin-left: 25px
+	border: 1px solid rgba(51, 51, 51, 0.1)
+	border-radius: 6px
+	// width: 550px
+	// min-height: 404px
+	padding: 22px 35px 0px 33px
+	// position: relative
+	// margin-bottom: 24px
+	display: flex!important
+	flex-direction: column
+	justify-content: space-between
+	.reviews-text
+		p 
+			font-size: 16px
+			letter-spacing: 0.40px
+			line-height: 27px
+	.reviews-footer
+		display: flex
+		align-items: center
+		// position: absolute
+		margin-top: 40px
+		margin-bottom: 33px
+.reviews-name
+	color: #595959
+	font-size: 16px
+	font-weight: 600
+	line-height: 26px
+	margin-bottom: 8px
+.reviews-data
+	color: #7a7a7a
+	font-size: 14px
+	margin-bottom: 10px
+	letter-spacing: 0.42px
+
+.button-container
+	margin-top: 30px
+	button
+		width: 231px
+		margin-right: 12px
+		margin-left: 12px
+	.btn-left
+		color: black
+		box-shadow: 0 0 6px rgba(51, 51, 51, 0.04)
+		border-radius: 24px
+		border: 1px solid #e5e5e5
+		background-color: #ffffff	
+		&:hover
+			box-shadow: 0 0 6px rgba(241, 90, 36, 0.32)
+	.btn-right
+		box-shadow: 0 0 6px rgba(241, 90, 36, 0.32)
+		border-radius: 24px
+		background-color: $hover-color
+	
+
+.reviews
+	margin-top: 155px
+	position: relative
+	margin-bottom: 80px
+	&:before
+		content: ''
+		top: -75px
+		position: absolute
+		width: 100%
+		height: 1px
+		background-color: #e5e5e5	

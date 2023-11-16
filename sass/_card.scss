@@ -1,0 +1,411 @@
+.service-card {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.service-card__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 80px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.service-card__gallery {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.service-card__main-photo {
+  margin-bottom: 32px;
+
+  img {
+    width: 541px;
+    height: 333px;
+  }
+}
+
+.service-card__photos {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+
+    color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+
+    &:hover {
+      border: none;
+      box-shadow: 0 0 12px 0 rgba(51, 51, 51, 0.12);
+    }
+  }
+
+  .card-photo--active {
+    border: 1px solid #f15a24;
+    &:hover {
+      border: 1px solid #f15a24;
+    }
+  }
+}
+
+
+
+.service-card__buy {
+  flex-basis: 50%;
+  margin-top: 60px;
+
+  h1 {
+    font-size: 26px;
+    color: #333333;
+  }
+}
+
+.service-card__color {
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  color: #595959;
+}
+
+.service-card__color-choose {
+  position: relative;
+
+  display: inline-block;
+
+  input {
+    display: none;
+
+    -webkit-appearance: radio;
+
+    &#pink + label {
+      background-color: #f22469;
+    }
+
+    &#blue + label {
+      background-color: #248bf2;
+
+      &:hover {
+        .service-card__color-info {
+          visibility: visible;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    &#yellow + label {
+      background-color: #f2f224;
+    }
+
+    &:checked + label {
+      background-image: url(../img/check-color.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 14px 14px;
+
+      &:hover::after {
+        border-color: #e5e5e5;
+      }
+    }
+  }
+
+  label {
+    position: relative;
+
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+    margin-left: 6px;
+
+    vertical-align: middle;
+
+    background-color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right:-4px;
+      bottom:-4px;
+      z-index: -1;
+
+      display: inline-block;
+
+      background: none;
+      border: 2px solid #e5e5e5;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      &::after {
+        border-color: #f15a24;
+
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}
+
+.service-card__color-info {
+  position: absolute;
+  bottom: -44px;
+  left: -69px;
+  z-index: 3;
+
+  width: 155px;
+  height: 32px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #595959;
+  border-radius: 5px;
+  visibility: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 70px;
+
+    width: 0;
+
+    border: 10px solid transparent;
+    border-bottom: 10px solid #595959;
+  }
+}
+
+.service-card__table {
+  width: 100%;
+
+  font-size: 15px;
+  color: #7a7a7a;
+
+  tr {
+    border-bottom: 1px solid #e5e5e5;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+
+    &:first-child {
+      width: 150px;
+      padding-left: 0;
+
+      font-weight: 600;
+      color: #595959;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.service-card__btn {
+  width: 107px;
+  height: 36px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 34px;
+  color: #ffffff;
+
+  background-color: #f15a24;
+  border: none;
+  border: 1px solid #f15a24;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(241, 90, 36, 0.32);
+
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: #f15a24;
+
+    background-color: #ffffff;
+  }
+}
+
+.service-card__descr {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+
+  h2 {
+    flex-basis: 100%;
+    padding-bottom: 10px;
+
+    font-size: 18px;
+    color: #595959;
+
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  table {
+    width: 45%;
+  }
+
+  tr {
+    border-bottom: 1px solid #e5e5e5;
+
+    &:first-child td {
+      padding-top: 0;
+    }
+  }
+
+  td {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+
+    color: #7a7a7a;
+
+    &:first-child {
+      width: 150px;
+      padding-left: 0;
+
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      color: #595959;
+    }
+  }
+}
+
+.service-card__suit-device {
+  flex-basis: 50%;
+
+  h3 {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+
+    color: #595959;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  a {
+    position: relative;
+
+    display: inline-block;
+    padding-bottom: 2px;
+
+    color: #f15a24;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 0;
+      height: 1px;
+
+      background: #f15a24;
+
+      transition: all 0.3s;
+    }
+
+    &:hover::before {
+      left: 0;
+
+      width: 100%;
+
+      background: #f15a24;
+    }
+  }
+}
+
+
+@media(max-width: 1150px) {
+  .service-card__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+@media(max-width: 660px) {
+  .service-card__main-photo {
+    margin-bottom: 32px;
+  
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .service-card__suit-device {
+    flex-basis: 40%;
+  }
+
+  .service-card__descr {
+
+    table {
+      width: 55%;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .service-card__suit-device {
+    margin-top: 40px;
+    flex-basis: 100%;
+  }
+
+  .service-card__descr {
+
+    table {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 410px) {
+
+  .service-card__table {
+    td {
+      &:first-child {
+        width: 70px;
+      }
+    }
+  }
+}

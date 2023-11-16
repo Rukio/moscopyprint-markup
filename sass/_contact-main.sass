@@ -1,0 +1,91 @@
+.contact-main
+	margin-top: 70px
+.contact-main__content
+	.benefit-header
+		p 
+			width: 760px
+.contact-block
+	margin-bottom: 60px
+	display: flex
+	margin-top: 60px
+	.contact-block__form
+		width: 670px
+		h3 
+			font-size: 24px
+			line-height: 64px
+		.contacts-us__header
+			border-bottom: initial
+			padding-left: 0
+		.contacts-us__form
+			padding-left: 0
+			padding-top: 0
+			#btn-width
+				width: 100%
+		.contacts-us__form textarea
+			&:focus
+				border-color: $hover-color
+				box-shadow: 0 0 6px rgba(241, 90, 36, 0.2)
+	.contact-block__info
+		width: 590px
+		h3 
+			font-size: 24px
+			font-weight: $font-weight-active
+			line-height: 64px
+			letter-spacing: 0.41px
+		.block__info
+			display: flex
+			flex-wrap: wrap
+			.block
+				margin-bottom: 25px
+				.hh 
+					opacity: 0.65
+					font-size: 14px
+					line-height: 34px
+					text-transform: uppercase
+					letter-spacing: 0.42px
+
+			.block__info-text
+				p:hover
+					color: $hover-color 
+			.block__info-left
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				margin-right: 55px
+.btn-size
+	width: 100%
+.black-border-group
+	position: relative
+	.black-border
+		border: 2px solid black
+		width: 100%
+		position: absolute
+		bottom: -1px
+.error-cont
+	label
+		position: relative
+		input[type=text], input[type=tel], textarea
+			border: 1px solid #f12424
+			box-shadow: 0 0 6px rgba(241, 90, 36, 0.16)
+		&:nth-child(1), &:nth-child(2)
+			&:after
+				position: absolute
+				content: 'Поле обязательное'
+				color: #f12424
+				line-height: 21px
+				font-size: 12px
+				font-weight: 600
+				letter-spacing: 0.36px
+				bottom: 20px
+				width: 125px
+		&:nth-child(3)
+			&:after
+				position: absolute
+				content: 'Поле обязательное'
+				color: #f12424
+				line-height: 21px
+				font-size: 12px
+				font-weight: 600
+				letter-spacing: 0.36px
+				bottom: -20px
+				width: 125px

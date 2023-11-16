@@ -1,0 +1,225 @@
+.form-section
+	position: relative
+	margin-bottom: 155px
+	border-top: 1px solid #e5e5e5
+	padding-top: 80px!important
+	.benefit-header
+		margin-bottom: 40px
+		h2
+			line-height: 64px	
+	.form-container
+		.button-container
+			button
+				width: 100%
+.blog-s
+	margin-bottom: 80px
+	.error
+		&:after
+			content: 'Поле обязательное'
+			color: #f12424
+			line-height: 21px
+			font-size: 12px
+			font-weight: 600
+			letter-spacing: 0.36px
+			position: absolute
+			bottom: -25px
+		input
+			border: 1px solid #f12424
+			box-shadow: 0 0 6px rgba(241, 90, 36, 0.16)
+.class-blog-p
+	position: relative
+.class-blog
+	&:before
+		content: ''
+		top: -19px
+		left: 50%
+		transform: translateX(-50%)
+		position: absolute
+		border: 1px solid #e6e6e6
+		width: 830px
+		// margin-top: 50%
+		// transform: translateY(50%)
+.form-container
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	li 
+		display: flex
+		flex-direction: column
+		margin-bottom: 28px
+		justify-content: flex-end
+		flex-grow: 1
+		position: relative
+		label
+			font-weight: 600
+		input 
+			width: 92%
+			height: 48px
+			font-size: 16px
+			font-weight: 400
+			line-height: 36px
+			padding-left: 18px
+			padding-right: 18px
+			border-radius: 5px
+			border: 1px solid #e6e6e6
+			background-color: #ffffff
+			&:hover
+				box-shadow: 0 0 6px rgba(0, 0, 0, 0.1)
+			&::placeholder
+				opacity: 0.65
+				color: #595959
+				font-size: 16px
+				letter-spacing: 0.48px
+				line-height: 36px
+				font-weight: 400
+			&:focus
+				box-shadow: 0 0 6px rgba(241, 90, 36, 0.16)
+				border-radius: 5px
+				border: 1px solid $hover-color
+		label
+			font-size: 14px
+			line-height: 36px
+			letter-spacing: 0.42px
+			span
+				color: $hover-color
+	.pretty
+		width: 400px
+		height: 48px
+		display: flex
+		align-items: center
+		.list
+			width: 400px
+			margin-top: 0px
+			border: 1px solid $hover-color
+			left: -1px
+			top: 95%
+			border-top: none
+			border-top-right-radius: 0px
+			border-top-left-radius: 0px
+			border-bottom-right-radius: 5px
+			border-bottom-left-radius: 5px
+			right: 22px
+.checked
+	display: flex
+	justify-content: center
+	margin-top: 2px
+	.text-sms
+		opacity: 0.65
+		color: #595959
+		font-size: 16px
+		line-height: 24px
+		letter-spacing: 0.48px
+		cursor: pointer
+		span
+			color: $hover-color
+	.cbx span:last-child
+		padding-left: 3px
+
+// .arrow
+// 	width: 400px!important
+// 	.selected
+// 		width: 400px!important
+
+.button-container
+	display: flex
+	justify-content: center
+	button
+		padding: 17px 35px
+		box-shadow: 0 0 6px rgba(241, 90, 36, 0.32)
+		border-radius: 24px
+		background-color: $hover-color
+		color: $text-color
+		font-size: 16px
+		font-weight: 600
+		letter-spacing: 0.48px
+		border: 1px solid $hover-color
+		transition: all 0.3s linear
+		&:hover
+			background-color: $text-color
+			color: $hover-color
+			border: 1px solid $hover-color
+// .form-container
+// 	.prettydropdown
+// 		ul 
+// 			border: 1px solid #e6e6e6
+// 			border-radius: 5px
+
+// 			&:focus
+// 				outline: none
+// 				border-color: #e6e6e6
+// 			li
+// 				// opacity: 0.65
+// 				color: #595959
+// 				border-bottom: 1px solid #e6e6e6
+// 				border-radius: 1px
+// 				font-weight: 400
+// 			li[data-value="name"]
+// 				opacity: 0.65
+// 		.active
+// 			li[data-value="name"]
+// 				display: none
+			
+// 	.active
+// 		li 
+// 			opacity: 1
+// 	.prettydropdown:not(.disabled) 
+// 		ul:hover 
+// 			border-color: #e6e6e6
+// 			box-shadow: 0 0 6px rgba(0, 0, 0, 0.1)
+// 	.prettydropdown > ul.active > li:not(.label):hover, .prettydropdown > ul.active > li.hover:not(.label)
+// 		background: white
+// 		color: $hover-color
+// 	.prettydropdown:not(.disabled) > ul.active
+// 		border-color: $hover-color
+// 	.prettydropdown > ul li.disabled
+// 		opacity: 0.65
+
+// 	.prettydropdown.arrow 
+// 		.selected
+// 			display: block
+// 			&:after
+// 				transform: rotate(0deg)
+// 				top: 0px
+// 				right: 20px
+// 			&:before
+// 				border-top-color: black
+// 				transform: rotate(0deg)
+// 				top: 5px
+// 				right: 20px
+// 			.checked
+// 				width: 16px	
+// 				height: 13px
+// 				margin-top: 16px
+// 				margin-right: 20px
+// 				transform: rotate(-90deg)
+// 			&:hover
+// 				svg
+// 					fill: $hover-color
+.form-container
+	.option[data-value="name"]
+		display: none
+	.current
+		font-size: 16px
+	.nice-select:hover
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.1)
+		border-color: #e6e6e6
+	.nice-select:active, .nice-select.open, .nice-select:focus
+		border-color: $hover-color
+	.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus
+		color: $hover-color
+		background-color: initial
+	.nice-select
+		li 
+			margin-bottom: 0px
+			padding-bottom: 5px
+			border-bottom: 1px solid #e6e6e6
+		&:after
+			width: 8px
+			height: 8px
+			border-bottom: 1.6px solid #999
+			border-right: 1.6px solid #999
+	.nice-select.open:after
+		border-bottom: 1.6px solid $hover-color
+		border-right: 1.6px solid $hover-color	
+	.opacity
+		opacity: 0.5

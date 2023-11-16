@@ -1,0 +1,179 @@
+header
+	height: 140px
+	width: 100%
+	background-image: url("../img/bg11-min.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	box-shadow: 3px 4px 10px rgba(51, 51, 51, 0.1)
+.info-list
+	display: flex
+	list-style-type: none
+	align-items: center
+	justify-content: space-between
+	padding-top: 12px
+	font-size: 13px
+	li
+		align-items: center
+		display: flex
+		svg
+			height: 16px
+			width: 16px
+			opacity: 0.6
+			fill: $text-color
+		a
+			position: relative
+			color: $text-color
+			opacity: 0.6
+			height: 14px
+		span
+			color: $text-color
+			opacity: 0.6
+		&:nth-child(1)
+			a
+				margin-right: 5px
+			svg	
+				margin-right: 8px
+			
+		&:nth-child(1),&:nth-child(2)
+			a:hover
+				border-top: 1px hidden
+				border-bottom: 1px solid white
+				opacity: 1
+		&:nth-child(3)
+			span	
+				letter-spacing: 0.69px
+			svg	
+				margin-right: 10px
+		&:nth-child(4)
+			flex-grow: 1
+			span	
+				letter-spacing: 0.59px
+			svg	
+				margin-right: 12px
+		&:nth-child(6),&:nth-child(7)
+			svg	
+				margin-right: 16px
+		&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
+			a:hover
+				opacity: 1
+				svg
+					transform: scale(1.1)
+					fill: #ffffff
+					filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.32))
+
+	input[type=search] 
+		height: 11px
+		padding-left: 10px
+		border: none
+		background: none
+		-webkit-appearance: none
+		color: white
+		width: 165px
+
+
+.vertical-line
+	&:after
+		content: ""
+		width: 1px
+		height: 16px
+		background-color: $text-color
+		opacity: 0.6
+		margin-left: 15px
+		margin-right: 15px
+.border-line
+	position: absolute
+	width: 100%
+	left: 0
+	margin-top: 10px
+	height: 1px
+	background-color: #ffffff
+	opacity: 0.1
+
+.size:before
+	content: attr(data-title)
+	box-sizing: border-box
+	display: block
+	background: white
+	color: black
+	padding-left: 13px
+	position: absolute
+	left: 50%
+	top: -30px
+	margin-left: -33px
+	width: 64px
+	height: 24px
+	line-height: 25px
+	border-radius: 5px
+	opacity: 0
+	transition: .25s ease-in-out
+.size:after
+	content: ''
+	display: block
+	position: absolute
+	top: 35px
+	left: 50%
+	margin-left: -8px
+	height: 0
+	width: 0
+	border-left: 8px solid transparent
+	border-right: 8px solid transparent
+	border-bottom: 8px solid white
+	transition: .25s ease-in-out
+	opacity: 0
+.size:hover::before
+	opacity: 1
+	top: 21px
+.size:hover::after
+	opacity: 1
+	top: 15px
+
+.logo-nav
+	margin-top: 20px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-size: 16px
+	letter-spacing: 0.48px
+.logo
+	margin-right: 31px
+	a
+		img
+			height: 81px
+.nav-list
+	flex-grow: 1
+	ul
+		margin-right: 60px
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		li
+			a	
+				color: $text-color
+				&:hover
+					border-top: 1px hidden
+					border-bottom: 1px solid white
+				&:active
+					text-shadow: 1px 0 0 currentColor	
+					svg
+						transform: rotate(180deg)
+				svg
+					height: 7px
+					width: 10px
+					fill: $text-color	
+
+.contact-link
+	a 
+		color: $text-color
+		border-radius: 5px
+		border: 1px solid #ffffff
+		padding: 15px 29px
+		margin-left: 31px
+		&:hover
+			color: black
+			box-shadow: 0 0 6px rgba(255, 255, 255, 0.32)
+			background-color: #ffffff
+.search::-webkit-search-cancel-button
+	-webkit-appearance: none
+.close-search
+	color: #ffffff
+	opacity: 0.7
